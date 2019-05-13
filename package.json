@@ -1,0 +1,33 @@
+{
+  "name": "react-avoid-unnecessary-rerenders-workshop",
+  "version": "1.0.0",
+  "description": "This app is built in React on top of Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alinilea/react-avoid-unnecessary-rerenders-workshop.git"
+  },
+  "keywords": [
+    "react",
+    "avoid",
+    "unnecessary",
+    "rerender"
+  ],
+  "author": "Alin Ilea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alinilea/react-avoid-unnecessary-rerenders-workshop/issues"
+  },
+  "homepage": "https://github.com/alinilea/react-avoid-unnecessary-rerenders-workshop#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "why-did-you-update": "^1.0.6"
+  }
+}
