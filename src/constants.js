@@ -20,4 +20,4 @@ export const REACT_ELEMENT_SPAN = <span>I am a React element with type <strong>s
 
 export const addTwoNumbers = (a = 2, b = 3) => a + b;
 
-export const totalFieldsNumber = 700;
+export const totalFieldsNumber = 1000;
