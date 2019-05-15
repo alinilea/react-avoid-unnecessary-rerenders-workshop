@@ -31,11 +31,16 @@ class ParentCont extends React.Component {
 
   handleChange = (name, value) => this.setState({[name]: value});
 
-  onClickEventHandler = () => console.log('onClickEventHandler button was clicked');
+  onClickEventHandler = () => console.log(`onClickEventHandler - 
+    this way you avoid creating a new function object every time within render`);
 
   render () {
     const { field1, field2, field3 } = this.state;
-
+    // const OBJECT_WITH_PROPERTIES = {
+    //   name: 'I am the property "name" of the OBJECT_WITH_PROPERTIES',
+    //   color: '#0f0'
+    // };
+    // const OBJECT_WITH_PROPERTIES = {};
     return (
       <fieldset>
         <legend>

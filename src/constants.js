@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const BOOL_FALSE = false;
 export const NUMBER = 12;
 export const STRING = 'I am the string from the STRING variable';
@@ -20,4 +18,4 @@ export const REACT_ELEMENT_SPAN = <span>I am a React element with type <strong>s
 
 export const addTwoNumbers = (a = 2, b = 3) => a + b;
 
-export const totalFieldsNumber = 1000;
+export const totalFieldsNumber = 700;
