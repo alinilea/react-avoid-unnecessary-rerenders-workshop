@@ -2,8 +2,7 @@ import React, { Fragment } from 'react';
 import Head from 'next/head';
 
 import Navbar from '../src/components/Navbar';
-import HardCodedInputsWithTwoChildsCont
-  from '../src/containers/HardCodedInputsWithTwoChildsCont';
+import ParentCont from '../src/containers/ParentCont';
 
 class HomePage extends React.Component {
   render () {
@@ -17,7 +16,7 @@ class HomePage extends React.Component {
 
         <Navbar page={this.props.url.pathname} />
 
-        <HardCodedInputsWithTwoChildsCont />
+        <ParentCont />
       </Fragment>
     )
   }

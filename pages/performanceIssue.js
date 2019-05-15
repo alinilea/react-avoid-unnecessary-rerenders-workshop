@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 // Components
 import Navbar from '../src/components/Navbar';
-import RenderInputsUsingMapCont from '../src/containers/RenderInputsUsingMapCont';
+import ParentWithManyFieldsCont from '../src/containers/ParentWithManyFieldsCont';
 
 class PerformanceIssuePage extends React.Component {
   render () {
@@ -17,7 +17,7 @@ class PerformanceIssuePage extends React.Component {
 
         <Navbar page={this.props.url.pathname} />
 
-        <RenderInputsUsingMapCont />
+        <ParentWithManyFieldsCont />
 
         <Navbar page={this.props.url.pathname} />
       </Fragment>

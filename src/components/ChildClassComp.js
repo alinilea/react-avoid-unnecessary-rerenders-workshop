@@ -1,6 +1,6 @@
 import React from 'react';
 
-class HardCodedPropsComp extends React.Component {
+class ChildClassComp extends React.Component {
   render () {
     const {
       style, bool, number, string, objectWithProperties, reactElementSpan,
@@ -10,8 +10,7 @@ class HardCodedPropsComp extends React.Component {
     return (
       <fieldset>
         <legend>
-          <strong>Child: </strong>
-          I am <strong>HardCodedPropsComp</strong>, a functional/stateless/presentational/dumb component
+          I am <strong>ChildClassComp</strong>, a functional/stateless/presentational/dumb component
         </legend>
 
         <ul style={style}>
@@ -40,4 +39,4 @@ class HardCodedPropsComp extends React.Component {
   }
 }
 
-export default HardCodedPropsComp;
+export default ChildClassComp;

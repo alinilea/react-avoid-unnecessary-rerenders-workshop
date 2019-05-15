@@ -2,8 +2,8 @@ import React from 'react';
 
 // Components
 import InputComp from '../components/InputComp';
-import HardCodedPropsComp from '../components/HardCodedPropsComp';
-import ArrowFunctionComp from '../components/ArrowFunctionComp';
+import ChildClassComp from '../components/ChildClassComp';
+import ChildFunctionComp from '../components/ChildFunctionComp';
 
 // Others
 import {
@@ -18,7 +18,7 @@ import {
   EMPTY_FN,
 } from '../constants';
 
-class HardCodedInputsWithTwoChildsCont extends React.Component {
+class ParentCont extends React.Component {
   constructor() {
     super();
 
@@ -39,8 +39,7 @@ class HardCodedInputsWithTwoChildsCont extends React.Component {
     return (
       <fieldset>
         <legend>
-          <strong>Parent: </strong> I am <strong>HardCodedInputsWithTwoChildsCont</strong>
-          , a class/stateful/container/smart component
+          I am <strong>ParentCont</strong>, a class/stateful/container/smart component
         </legend>
 
         <InputComp
@@ -62,7 +61,7 @@ class HardCodedInputsWithTwoChildsCont extends React.Component {
           onChange={this.handleChange}
         />
 
-        <HardCodedPropsComp
+        <ChildClassComp
           bool={false}
           number={12}
           string={'I am a string'}
@@ -74,7 +73,7 @@ class HardCodedInputsWithTwoChildsCont extends React.Component {
           arrayWithValues={ARRAY_WITH_ELEMENTS || []}
         />
 
-        <ArrowFunctionComp />
+        <ChildFunctionComp />
 
         <style jsx>{`
           div {
@@ -108,5 +107,4 @@ class HardCodedInputsWithTwoChildsCont extends React.Component {
     )
   }
 }
-
-export default HardCodedInputsWithTwoChildsCont;
+export default ParentCont;

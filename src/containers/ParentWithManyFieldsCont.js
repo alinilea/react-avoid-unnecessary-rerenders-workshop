@@ -2,8 +2,8 @@ import React from 'react';
 
 // Components
 import InputComp from '../components/InputComp';
-import HardCodedPropsComp from '../components/HardCodedPropsComp';
-import ArrowFunctionComp from '../components/ArrowFunctionComp';
+import ChildClassComp from '../components/ChildClassComp';
+import ChildFunctionComp from '../components/ChildFunctionComp';
 
 // Others
 import {
@@ -29,7 +29,7 @@ const setInitialFormData = () => {
   return initialFormData;
 };
 
-class RenderInputsUsingMapCont extends React.Component {
+class ParentWithManyFieldsCont extends React.Component {
   constructor () {
     super();
 
@@ -53,8 +53,7 @@ class RenderInputsUsingMapCont extends React.Component {
     return (
       <fieldset>
         <legend>
-          <strong>Parent: </strong> I am <strong>RenderInputsUsingMapCont</strong>
-          , a class/stateful/container/smart component
+          I am <strong>ParentWithManyFieldsCont</strong>, a class/stateful/container/smart component
         </legend>
 
         {
@@ -71,7 +70,7 @@ class RenderInputsUsingMapCont extends React.Component {
           })
         }
 
-        <HardCodedPropsComp
+        <ChildClassComp
           bool={false}
           number={12}
           string={'I am a string'}
@@ -83,7 +82,7 @@ class RenderInputsUsingMapCont extends React.Component {
           arrayWithValues={ARRAY_WITH_ELEMENTS || []}
         />
 
-        <ArrowFunctionComp />
+        <ChildFunctionComp />
 
         <style jsx>{`
           div {
@@ -118,4 +117,4 @@ class RenderInputsUsingMapCont extends React.Component {
   }
 }
 
-export default RenderInputsUsingMapCont;
+export default ParentWithManyFieldsCont;
