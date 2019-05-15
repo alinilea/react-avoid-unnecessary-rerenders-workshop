@@ -10,8 +10,9 @@ class HomePage extends React.Component {
     return (
       <Fragment>
         <Head>
-          <title>React avoid unnecessary re-renders - Workshop</title>
+          <title>Workshop-Avoid unnecessary re-renders</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon.ico" />
         </Head>
 
         <Navbar page={this.props.url.pathname} />
