@@ -1,8 +1,8 @@
 # Workshop - How to avoid unnecessary re-renders in React
-####built on top of Next.js
+#### built on top of Next.js
 
 
-###Setup
+### Setup
 ```
 1. git clone
 
@@ -15,7 +15,7 @@
 5. http://localhost:4000
 ```
 
-###Webstorm tip
+### Webstorm tip
 in order to prevent often code indexing
 find '.next' folder in the root of the project -> right click ->
 'Mark Directory as' -> 'Excluded'
