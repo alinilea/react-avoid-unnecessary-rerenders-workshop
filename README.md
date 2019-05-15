@@ -17,6 +17,8 @@
 
 ### Webstorm tip
 in order to prevent often code indexing
+
 find '.next' folder in the root of the project -> right click ->
+
 'Mark Directory as' -> 'Excluded'
 
